@@ -1,0 +1,9 @@
+@import "@material/typography/mdc-typography";
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+
+body {
+  --mdc-theme-primary: #00796b;
+  margin: 0;
+  background-color: #f2f2f2;
+}

@@ -10,9 +10,15 @@
   "author": "chuangzhu",
   "license": "MIT",
   "dependencies": {
+    "@material/react-button": "^0.15.0",
+    "@material/react-card": "^0.15.0",
+    "@material/react-typography": "^0.15.0",
+    "gray-matter": "^4.0.2",
     "next": "^9.3.6",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.5",
+    "webpack": "^4.43.0"
   }
 }
