@@ -1,0 +1,73 @@
+[
+  {
+    "id": "2374A15A-0DC7-458D-A8BD-766E55DFB0AF",
+    "name": "account-edit-outline",
+    "codepoint": "F0FFB",
+    "aliases": [],
+    "tags": [
+      "Account \/ User"
+    ],
+    "author": "Michael Richins",
+    "version": "4.0.96"
+  },
+  {
+    "id": "E3A4F70D-92EF-4115-BBB3-3BE68A788F5D",
+    "name": "clock-outline",
+    "codepoint": "F0150",
+    "aliases": [
+      "access-time",
+      "query-builder",
+      "schedule"
+    ],
+    "tags": [
+      "Date \/ Time"
+    ],
+    "author": "Google",
+    "version": "1.5.54"
+  },
+  {
+    "id": "5C6175DD-8549-4004-AB77-A545D721A0DE",
+    "name": "github",
+    "codepoint": "F02A4",
+    "aliases": [
+      "microsoft-github"
+    ],
+    "tags": [
+      "Developer \/ Languages",
+      "Brand \/ Logo"
+    ],
+    "author": "Contributors",
+    "version": "1.5.54"
+  },
+  {
+    "id": "6EAADAE4-30AE-4F69-888F-364BBAFFF5E7",
+    "name": "qqchat",
+    "codepoint": "F0605",
+    "aliases": [],
+    "tags": [
+      "Brand \/ Logo"
+    ],
+    "author": "Contributors",
+    "version": "1.5.54"
+  },
+  {
+    "id": "2022546E-45D4-4AC5-B24F-6D6AAEA0F452",
+    "name": "tag-outline",
+    "codepoint": "F04FC",
+    "aliases": [],
+    "tags": [],
+    "author": "Google",
+    "version": "1.5.54"
+  },
+  {
+    "id": "47F1C290-ED78-4459-B33C-6E2ACC867CC6",
+    "name": "telegram",
+    "codepoint": "F0501",
+    "aliases": [],
+    "tags": [
+      "Brand \/ Logo"
+    ],
+    "author": "Contributors",
+    "version": "1.5.54"
+  }
+]

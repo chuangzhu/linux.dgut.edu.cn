@@ -4,6 +4,8 @@
 @import "@material/chips/mdc-chips";
 @import "./article.scss";
 
+@import url('/assets/mdi/css/materialdesignicons.min.css');
+
 body {
   --mdc-theme-primary: #00796b;
   margin: 0;

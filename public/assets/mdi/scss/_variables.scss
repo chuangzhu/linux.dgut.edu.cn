@@ -1,0 +1,17 @@
+$mdi-filename:         "materialdesignicons";
+$mdi-font-name:        "Material Design Icons";
+$mdi-font-family:      "materialdesignicons";
+$mdi-font-weight:      "normal";
+$mdi-font-path:        "../fonts" !default;
+$mdi-font-size-base:   24px !default;
+$mdi-css-prefix:       mdi !default;
+$mdi-version:          "5.1.45" !default;
+
+$mdi-icons: (
+  "account-edit-outline": F0FFB,
+  "clock-outline": F0150,
+  "github": F02A4,
+  "qqchat": F0605,
+  "tag-outline": F04FC,
+  "telegram": F0501
+);
