@@ -1,11 +1,30 @@
 import React from 'react'
+import Card from '@material/react-card'
 import Layout from '../../../../../components/Layout'
-import { getPostsBrief } from '../../../../../src/posts-brief'
+import { Headline4 } from '@material/react-typography'
+import ReactMarkdown from 'react-markdown'
+import { getPostsBrief, getPost } from '../../../../../src/posts-brief'
+import { ChipSet, Chip } from '@material/react-chips'
 
-export default function PostPage(props) {
+export default function PostPage({ post, date }) {
   return (
     <Layout>
-      <h1>Post page!</h1>
+      <Card style={{ padding: 16 }}>
+        <div style={{ paddingBottom: 16 }}>
+          <Headline4 style={{ margin: 0 }}>{post.data.title}</Headline4>
+          {/* <code>{date.join('/')}</code>
+          <code>{post.data.category}</code>
+          <code>{post.data.author}</code> */}
+          <ChipSet>
+            <Chip label={date.join('/')}/>
+            <Chip label={post.data.category}/>
+            <Chip label={post.data.author}/>
+          </ChipSet>
+        </div>
+        <article className="article">
+          <ReactMarkdown source={post.content} />
+        </article>
+      </Card>
     </Layout>
   )
 }
@@ -24,6 +43,7 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 
-export async function getStaticProps() {
-  return { props: {} }
+export async function getStaticProps({ params }) {
+  const post = await getPost(params)
+  return { props: { post, date: [params.year, params.month, params.date] } }
 }

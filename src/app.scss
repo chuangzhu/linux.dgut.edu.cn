@@ -1,6 +1,8 @@
 @import "@material/typography/mdc-typography";
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
+@import "@material/chips/mdc-chips";
+@import "./article.scss";
 
 body {
   --mdc-theme-primary: #00796b;

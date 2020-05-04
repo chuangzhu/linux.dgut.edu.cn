@@ -16,8 +16,8 @@ export async function getPostsBrief() {
     const params = [
       matterResult.data.category,
       splitted[0],
-      ('0' + splitted[1]).slice(-2),
-      ('0' + splitted[2]).slice(-2),
+      splitted[1],
+      splitted[2],
       splitted[3] + '.html'
     ]
     return {
@@ -27,4 +27,20 @@ export async function getPostsBrief() {
     }
   })
   return Promise.all(allBriefs)
+}
+
+export async function getPost(params) {
+  const fileName = [
+    params.year,
+    params.month,
+    params.date,
+    params.post.split('.')[0]
+  ].join('-') + '.markdown'
+  const filePath = path.join(process.cwd(), 'posts', fileName)
+  const content = await readFile(filePath)
+  const matterResult = matter(content)
+  return {
+    content: matterResult.content,
+    data: matterResult.data
+  }
 }
