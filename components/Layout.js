@@ -1,8 +1,10 @@
 import React from 'react'
 import { Headline4, Headline5 } from '@material/react-typography'
-import { Button } from '@material/react-button'
+import { Button as _Button } from '@material/react-button'
 import Head from 'next/head'
 import Link from 'next/link'
+
+const Button = React.forwardRef(_Button)
 
 export default function Layout({ children }) {
   const imageHeight = 2.5 + 2 - (2.5 - 2.125) / 2 - (2 - 1.5) / 2
@@ -43,7 +45,7 @@ export default function Layout({ children }) {
         }}>
           <Link href="/" passHref><Button>Home</Button></Link>
           <Link href="/blog" passHref><Button>Blog</Button></Link>
-          <Button href="//mirrors.dgut.edu.cn">Mirrors</Button>
+          <Button href="https://mirrors.dgut.edu.cn">Mirrors</Button>
         </div>
       </div>
       {children}

@@ -13,9 +13,16 @@ export async function getPostsBrief() {
     const matterResult = matter(content)
     // e.g. 2020-4-22-webgame.markdown -> 2020/04/22/webgame
     const splitted = file.split('.')[0].split('-')
-    const dateName = [splitted[0], ('0' + splitted[1]).slice(-2), ('0' + splitted[2]).slice(-2), splitted[3]].join('/')
+    const params = [
+      matterResult.data.category,
+      splitted[0],
+      ('0' + splitted[1]).slice(-2),
+      ('0' + splitted[2]).slice(-2),
+      splitted[3] + '.html'
+    ]
     return {
-      link: `/${matterResult.data.category}/${dateName}`,
+      params,
+      link: `/${params.join('/')}`,
       ...(matterResult.data)
     }
   })

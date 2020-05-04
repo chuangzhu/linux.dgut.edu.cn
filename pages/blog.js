@@ -11,7 +11,10 @@ export default function Blog(props) {
     <Layout>
       {props.postsBrief.map(brief => (
         <Card style={{ marginBottom: 16 }} key={brief.link}>
-          <Link href={brief.link} passHref>
+          <Link
+            href="/[category]/[year]/[month]/[date]/[post]"
+            as={brief.link}
+            passHref>
             <CardPrimaryContent style={{ padding: 16 }}>
               <Headline6 style={{ margin: 0 }}>{brief.title}</Headline6>
               {brief.excerpt && <Body2 style={{
