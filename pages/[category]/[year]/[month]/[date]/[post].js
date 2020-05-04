@@ -8,17 +8,14 @@ import { ChipSet, Chip } from '@material/react-chips'
 
 export default function PostPage({ post, date }) {
   return (
-    <Layout>
+    <Layout title={post.data.title}>
       <Card style={{ padding: 16 }}>
-        <div style={{ paddingBottom: 16 }}>
+        <div style={{ paddingBottom: 24 }}>
           <Headline4 style={{ margin: 0 }}>{post.data.title}</Headline4>
-          {/* <code>{date.join('/')}</code>
-          <code>{post.data.category}</code>
-          <code>{post.data.author}</code> */}
           <ChipSet>
-            <Chip label={date.join('/')}/>
-            <Chip label={post.data.category}/>
-            <Chip label={post.data.author}/>
+            <Chip label={date.join('/')} leadingIcon={<span className="mdi mdi-clock-outline" />} />
+            <Chip label={post.data.category} leadingIcon={<span className="mdi mdi-tag-outline" />} />
+            <Chip label={post.data.author} leadingIcon={<span className="mdi mdi-account-edit-outline" />} />
           </ChipSet>
         </div>
         <article className="article">

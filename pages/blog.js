@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Blog(props) {
   return (
-    <Layout>
+    <Layout title="Blog">
       {props.postsBrief.map(brief => (
         <Card style={{ marginBottom: 16 }} key={brief.link}>
           <Link
