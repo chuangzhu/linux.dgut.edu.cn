@@ -11,7 +11,7 @@ export default function PostPage({ post, date }) {
     <Layout title={post.data.title}>
       <Card style={{ padding: 16 }}>
         <div style={{ paddingBottom: 24 }}>
-          <Headline4 style={{ margin: 0 }}>{post.data.title}</Headline4>
+          <h1 className="article-title">{post.data.title}</h1>
           <ChipSet>
             <Chip label={date.join('/')} leadingIcon={<span className="mdi mdi-clock-outline" />} />
             <Chip label={post.data.category} leadingIcon={<span className="mdi mdi-tag-outline" />} />

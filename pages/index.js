@@ -31,21 +31,11 @@ export default function Index() {
             GNU/Linux 协会是 <b>研讨/宣传开放源代码的</b>，<b>给DGUT校内/校外学生一个交流平台的</b>，<b>一起共同进步的</b> 平台。
           </p>
           <p>
-            在这里，你可以学会/分享所有和自由软件世界相关的东西，包括但不限于怎么用（几乎）学习曲线最抖的编辑器：
+            在这里，你可以学会/分享所有和自由软件世界相关的东西，包括但不限于怎么用（几乎）学习曲线最抖的编辑器，学习使用大名鼎鼎的 shell 指令，了解和使用各种大名鼎鼎的开源软件：
           </p>
           <p className="img-container">
             <img src="/assets/vim-is-hard.png" alt="Vim is hard" />
-          </p>
-          <p>
-            学习使用大名鼎鼎的 shell 指令：
-          </p>
-          <p className="img-container">
             <img src="/assets/shell-is-hard.png" alt="Shell is hard" />
-          </p>
-          <p>
-            了解和使用各种大名鼎鼎的开源软件：
-          </p>
-          <p className="img-container">
             <img src="/assets/oss-icons.png" alt="OSS icons" />
           </p>
           <p>
@@ -53,7 +43,21 @@ export default function Index() {
           </p>
         </article>
         <style jsx>{`
-          .img-container { max-width: 40rem; margin: 0 auto; }
+          .img-container { max-width: 30rem; margin-left: auto; margin-right: auto; }
+          .img-container > img { display: block; margin-bottom: .8em; }
+          @media screen and (min-width: 1200px) {
+            .img-container {
+              max-width: 100%;
+              overflow-x: auto;
+              white-space: nowrap;
+            }
+            .img-container > img {
+              height: 400px;
+              margin-bottom: 0;
+              margin-right: 20px;
+              display: inline-block;
+            }
+          }
         `}</style>
       </Card>
       <Headline5 style={{ margin: '32px 0 12px 0' }}>资源</Headline5>

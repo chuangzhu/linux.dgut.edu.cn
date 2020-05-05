@@ -21,6 +21,7 @@ export default function Footer() {
             margin-right: 16px;
             color: var(--mdc-theme-primary);
             text-decoration: none;
+            white-space: nowrap;
           }
           .mdi { margin-right: 3px; font-size: 1.5rem; }
           .mdi::before { vertical-align: middle }

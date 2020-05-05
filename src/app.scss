@@ -4,10 +4,73 @@
 @import "@material/chips/mdc-chips";
 @import "./article.scss";
 
-@import url('/assets/mdi/css/materialdesignicons.min.css');
+@import url("/assets/mdi/css/materialdesignicons.min.css");
 
 body {
   --mdc-theme-primary: #00796b;
   margin: 0;
   background-color: #f2f2f2;
+}
+
+$image-height: 2.5 + 2 - (2.5 - 2.125) / 2 - (2 - 1.5) / 2;
+$brand-width: calc(#{$image-height + 13}rem + 8px);
+$inner-max-width-phone: 40em;
+
+.layout-outer {
+  --card-gap: 24px;
+}
+
+.brand-n-nav {
+  width: $brand-width;
+  margin: 0 auto;
+  margin-bottom: calc(var(--card-gap) - 6px);
+}
+
+.layout-inner {
+  max-width: $inner-max-width-phone;
+  margin: 0 auto;
+  margin-bottom: var(--card-gap);
+}
+
+footer {
+  max-width: $inner-max-width-phone;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  .layout-outer {
+    --outer-width: 85vw;
+    width: var(--outer-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brand-n-nav,
+  footer {
+    box-sizing: border-box;
+    float: left;
+    width: $brand-width;
+    margin-right: var(--card-gap);
+  }
+
+  .layout-inner {
+    width: calc(var(--outer-width) - #{$brand-width} - var(--card-gap));
+    box-sizing: border-box;
+    float: right;
+    margin: 0;
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .layout-outer {
+    --outer-width: 80vw;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .layout-outer {
+    --outer-width: 1920px;
+    --card-gap: 30px;
+  }
 }
