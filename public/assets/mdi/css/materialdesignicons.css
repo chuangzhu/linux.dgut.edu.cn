@@ -1,8 +1,8 @@
 /* MaterialDesignIcons.com */
 @font-face {
   font-family: "Material Design Icons";
-  src: url("../fonts/materialdesignicons-webfont.eot?v=5.1.45");
-  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=5.1.45") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=5.1.45") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=5.1.45") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=5.1.45") format("truetype");
+  src: url("../fonts/materialdesignicons-webfont.eot?v=5.1.450001");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=5.1.450001") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=5.1.450001") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=5.1.450001") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=5.1.450001") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,6 +40,22 @@
 
 .mdi-telegram::before {
   content: "\F0501";
+}
+
+.mdi-minidisc::before {
+  content: "\F0A06";
+}
+
+.mdi-git::before {
+  content: "\F02A2";
+}
+
+.mdi-dns::before {
+  content: "\F01D6";
+}
+
+.mdi-presentation-play::before {
+  content: "\F0429";
 }
 
 .mdi-blank::before {

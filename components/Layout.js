@@ -51,7 +51,7 @@ export default function Layout({ children, title }) {
         </div>
       </div>
       <div style={{ maxWidth: '80em', margin: '0 auto' }}>
-        <div style={{ marginBottom: 16 }}>
+        <div style={{ marginBottom: 24 }}>
           {children}
         </div>
         <Footer />

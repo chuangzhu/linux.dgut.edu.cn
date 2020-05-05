@@ -69,5 +69,43 @@
     ],
     "author": "Contributors",
     "version": "1.5.54"
+  },
+  {
+    "id": "1BFCC4B4-5BA5-4E64-889D-D64B61EA8D81",
+    "name": "minidisc",
+    "codepoint": "F0A06",
+    "aliases": [],
+    "tags": [],
+    "author": "GreenTurtwig",
+    "version": "2.5.94"
+  },
+  {
+    "id": "4CB8AF2D-5373-4247-AB9D-3B28B72EB7BC",
+    "name": "git",
+    "codepoint": "F02A2",
+    "aliases": [],
+    "tags": [
+      "Brand \/ Logo"
+    ],
+    "author": "Contributors",
+    "version": "1.5.54"
+  },
+  {
+    "id": "D4A20191-F5B8-4323-A0A8-F4C15A86A83B",
+    "name": "dns",
+    "codepoint": "F01D6",
+    "aliases": [],
+    "tags": [],
+    "author": "Google",
+    "version": "1.5.54"
+  },
+  {
+    "id": "E182F4B3-B2B0-41CD-90DC-5ADFBE25DA90",
+    "name": "presentation-play",
+    "codepoint": "F0429",
+    "aliases": [],
+    "tags": [],
+    "author": "Austin Andrews",
+    "version": "1.5.54"
   }
 ]

@@ -10,7 +10,7 @@ export default function Blog(props) {
   return (
     <Layout title="Blog">
       {props.postsBrief.map(brief => (
-        <Card style={{ marginBottom: 16 }} key={brief.link}>
+        <Card style={{ marginBottom: 12 }} key={brief.link}>
           <Link
             href="/[category]/[year]/[month]/[date]/[post]"
             as={brief.link}
