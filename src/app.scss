@@ -14,7 +14,8 @@ body {
 
 $image-height: 2.5 + 2 - (2.5 - 2.125) / 2 - (2 - 1.5) / 2;
 $brand-width: calc(#{$image-height + 13}rem + 8px);
-$inner-max-width-phone: 40em;
+$desktop-outer-width: calc(var(--outer-width) - #{$image-height + 13}rem - 8px - var(--card-gap));
+$phone-inner-max-width: 40em;
 
 .layout-outer {
   --card-gap: 24px;
@@ -27,13 +28,13 @@ $inner-max-width-phone: 40em;
 }
 
 .layout-inner {
-  max-width: $inner-max-width-phone;
+  max-width: $phone-inner-max-width;
   margin: 0 auto;
   margin-bottom: var(--card-gap);
 }
 
 footer {
-  max-width: $inner-max-width-phone;
+  max-width: $phone-inner-max-width;
   margin: 0 auto;
 }
 
@@ -54,7 +55,7 @@ footer {
   }
 
   .layout-inner {
-    width: calc(var(--outer-width) - #{$brand-width} - var(--card-gap));
+    width: $desktop-outer-width;
     box-sizing: border-box;
     float: right;
     margin: 0;

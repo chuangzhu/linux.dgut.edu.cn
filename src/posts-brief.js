@@ -18,7 +18,7 @@ export async function getPostsBrief() {
       splitted[0],
       splitted[1],
       splitted[2],
-      splitted[3] + '.html'
+      splitted[3]
     ]
     return {
       params,
@@ -34,7 +34,7 @@ export async function getPost(params) {
     params.year,
     params.month,
     params.date,
-    params.post.split('.')[0]
+    params.post
   ].join('-') + '.markdown'
   const filePath = path.join(process.cwd(), 'posts', fileName)
   const content = await readFile(filePath)
