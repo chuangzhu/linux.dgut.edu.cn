@@ -7,15 +7,15 @@ export default function Footer() {
       fontFamily: 'Roboto, sans-serif',
     }}>
       <div style={{ fontSize: '1.2rem' }}>
-        <Link href="https://t.me/dgutlug">
-          <a><span className="mdi mdi-telegram" />Telegram</a>
-        </Link>
-        <Link href="https://jq.qq.com/?_wv=1027&k=5Tw7Nao">
-          <a><span className="mdi mdi-qqchat" />QQ</a>
-        </Link>
-        <Link href="https://github.com/dglinux">
-          <a><span className="mdi mdi-github" />GitHub</a>
-        </Link>
+        <a href="https://t.me/dgutlug">
+          <span className="mdi mdi-telegram" />Telegram
+        </a>
+        <a href="https://jq.qq.com/?_wv=1027&k=5Tw7Nao">
+          <span className="mdi mdi-qqchat" />QQ
+        </a>
+        <a href="https://github.com/dglinux">
+          <span className="mdi mdi-github" />GitHub
+        </a>
         <style jsx>{`
           a {
             margin-right: 16px;

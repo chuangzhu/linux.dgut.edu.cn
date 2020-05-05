@@ -2,13 +2,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Card from '@material/react-card'
 import CardPrimaryContent from '../components/CardPrimaryContent'
-import { Headline4, Headline5, Subtitle2 } from '@material/react-typography'
+import { Headline5, Subtitle2 } from '@material/react-typography'
 
 const ServiceCard = ({ title, children, icon, href }) => (
   <Card style={{ marginBottom: 12 }}>
     <CardPrimaryContent style={{ padding: 16 }} href={href}>
       <span className={`mdi mdi-${icon}`} />
-      <Headline5 style={{ margin: 0, display: 'inline' }}>{title}</Headline5>
+      <Headline5 style={{ margin: 0 }}>{title}</Headline5>
       <Subtitle2 style={{ margin: 0, opacity: 0.57 }}>
         {children}
       </Subtitle2>

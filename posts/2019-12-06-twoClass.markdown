@@ -2,7 +2,7 @@
 title: 分享会预告 | Web渗透测试_实战
 layout: post
 author: dgtao
-category: Penetration
+category: penetration
 excerpt: 分享会预告：Web渗透测试以及实战
 ---
 技术分享会，它又来了。
