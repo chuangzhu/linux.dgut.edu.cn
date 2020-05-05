@@ -41,7 +41,7 @@ const Nav = () => (
     justifyContent: 'space-between'
   }}>
     <Link href="/" passHref><Button>Home</Button></Link>
-    <Link href="/blog" passHref><Button>Blog</Button></Link>
+    <Link href="/blog.html" passHref><Button>Blog</Button></Link>
     <Button href="https://mirrors.dgut.edu.cn">Mirrors</Button>
   </div>
 )
