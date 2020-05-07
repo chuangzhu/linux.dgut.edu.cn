@@ -52,6 +52,7 @@ export default function Layout({ children, title }) {
       <Head>
         <meta name="theme-color" content="#efefef" />
         <title>{title && `${title} - `}DGUT GNU/Linux 协会</title>
+        <link rel="icon" type="image/png" href="/assets/logo.png" />
       </Head>
       <div className="layout-outer">
         <div className="brand-n-nav">

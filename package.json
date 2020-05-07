@@ -1,7 +1,7 @@
 {
   "name": "dglinux",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./server.js",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production node ./server.js"
   },
