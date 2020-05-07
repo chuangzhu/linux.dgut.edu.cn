@@ -1,4 +1,4 @@
-We uses [Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign) icons in this site. But instead of loading 5000+ icons, we only uses a few of them. So we build the webfont ourselves to reduce the size.
+We use [Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign) icons for this site. But instead of loading 5000+ icons, we only use a few of them. So we build the webfont ourselves to reduce the size.
 
 ## Adding new icons
 
