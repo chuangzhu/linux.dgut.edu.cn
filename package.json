@@ -16,12 +16,12 @@
     "@material/react-typography": "^0.15.0",
     "express": "^4.17.1",
     "gray-matter": "^4.0.2",
-    "next": "^9.3.6",
+    "next": "^9.4.4",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "sass": "^1.26.5",
+    "sass": "^1.26.10",
     "webpack": "^4.43.0"
   },
   "devDependencies": {
