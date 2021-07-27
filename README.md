@@ -1,4 +1,4 @@
-# A submit for [design for dglinux](https://linux.dgut.edu.cn/design/)
+# \[DEPRECATED\] A submission for [design for dglinux](https://linux.dgut.edu.cn/design/)
 
 ```sh
 yarn install
